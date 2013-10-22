@@ -4,17 +4,18 @@ PORT = "3000"
 
 /** CONFIGURATION **/
 
-var express = require('express')
-  , app = express()
-  , http = require('http')
-  , server = http.createServer(app)
-  , redis = require('redis')
-  , io = require('socket.io').listen(server);
-
+var app = require('http').createServer(handler),
+  io = require('socket.io').listen(app),
+  redis = require('redis');
 
 io.set('log level', 1);  
 
-server.listen(PORT);
+app.listen(PORT);
+
+function handler(req, res) {
+    res.writeHead(200);
+    res.end("Hello server");
+}
 
 io.configure( function() {
   io.set('close timeout', 60*60); // 1hr time out

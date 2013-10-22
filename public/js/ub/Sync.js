@@ -63,7 +63,7 @@ UB.Sync = (function () {
 
 	// New message
 	function onSocketReceived(message) {
-	          data = jQuery.parseJSON(message.data);
+	          data = jQuery.parseJSON(message);
 	          console.log("....",message);
 	};
 
