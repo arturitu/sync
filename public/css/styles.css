@@ -1,0 +1,102 @@
+/******************/
+/* RESET	      */
+/******************/
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: transparent;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body,
+div,
+dl,dt,dd,
+ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,
+form,fieldset,
+input,textarea,
+a,
+p,blockquote,
+th,td
+{
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+img
+{
+ border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var
+{
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,ul
+{
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-size: 100%;
+  font-weight: normal;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary, mark {
+  display:block;
+}
+
+/******************/
+/* SITE           */
+/******************/
+
+#preload {
+	position: absolute;
+	background: url(../img/preload.gif) no-repeat top left;
+	width: 32px;
+	height: 32px;
+	z-index: 1000;
+	display: none;
+	
+	-webkit-transition: opacity 1s linear;
+	-moz-transition: opacity 1s linear;
+	transition: opacity 1s linear;
+}
+
+section {
+	z-index: 20;
+	opacity: 0;
+}
+
+section.hidden {
+	display: none;
+}
