@@ -3,14 +3,27 @@ sync
 
 Real time web app with the Dreamsons
 
-====
-1. # npm install
-//To execute package.json
+Libs used
+-----------
 
-2. # redis-server
-//To have redis running
+node - The server-side framework.
+socket.io - WebSocket power
+Redis Pubsub - Wildcard Push Notification support
 
-3. # node server.js
-//To run node
+## Set up
 
-4.Enter on http://localhost/sync/public/ (from mobile & computer)
+Install [node](http://nodejs.org), [npm](http://npmjs.org) and [Redis](http://redis.io).
+Install the node modules when you clone this directory.
+
+    npm install
+
+package.json will automatically installs the dependant npm modules.
+
+Run server
+----------------
+
+    $ redis-server
+    $ node server.js
+    
+
+* Start sync on computer & a mobile device > [http://localhost/sync/public/](http://localhost/sync/public/)
