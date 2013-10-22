@@ -27,3 +27,8 @@ Run server
     
 
 * Start sync on computer & a mobile device > [http://localhost/sync/public/](http://localhost/sync/public/)
+
+(May be you need to change this line on index.html to test in your localhost between computer & mobile)
+```html
+<script src="http://192.168.1.34:3000/socket.io/socket.io.js"></script>
+```
