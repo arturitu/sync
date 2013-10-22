@@ -1,14 +1,15 @@
-sync
+Sync Project
 ====
 
-Real time web app with the Dreamsons
+A multiuser real time web app for families to play together with the Dreamsons
 
 Libs used
 -----------
+Real time web application based on Redis Pub/Sub with Node.js and socket.io.
 
-node - The server-side framework.
-socket.io - WebSocket power
-Redis Pubsub - Wildcard Push Notification support
+* node - The server-side framework.
+* socket.io - WebSocket power.
+* Redis Pubsub - Wildcard Push Notification support.
 
 ## Set up
 
@@ -27,8 +28,7 @@ Run server
     
 
 * Start sync on computer & a mobile device > [http://localhost/sync/public/](http://localhost/sync/public/)
-
-(May be you need to change this line on index.html to test in your localhost between computer & mobile)
+(May be you need to change the IP on index.html to run in your localhost between computer & mobile)
 ```html
 <script src="http://192.168.1.34:3000/socket.io/socket.io.js"></script>
 ```
