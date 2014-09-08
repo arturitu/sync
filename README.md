@@ -1,7 +1,7 @@
 Sync Project
 ====
 
-A multiuser real time web app for families to play together with the Dreamsons
+A simple multiuser real time web app
 
 Libs used
 -----------
